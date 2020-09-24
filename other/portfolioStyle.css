@@ -1,0 +1,2280 @@
+/* This CSS file modifies some elements under the Portfolio HTML page. It is used after defaultStyle.css as modifications for portfolio HTML pages. Some changes are handled in the Javascript
+   for learning purposes.*/
+.terrabyte .maingrid{
+    height: 200%;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+.tbimage3 .mainGrid, .tbimage5 .mainGrid, .tbimage10 .mainGrid, .zbrushimage7 .maingrid, .zbrushimage9 .maingrid{
+    height: 160%;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+.ZBrush .maingrid, .miscimage10 .maingrid{
+    height: 120%;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.miscellaneous .maingrid, .tbimage1 .mainGrid, .tbimage2 .mainGrid, .tbimage4 .mainGrid, .tbimage6 .mainGrid, .tbimage7 .mainGrid, .tbimage8 .mainGrid, .tbimage9 .mainGrid, .zbrushimage1 .maingrid, .zbrushimage2 .maingrid, .zbrushimage3 .maingrid, .zbrushimage4 .maingrid, .zbrushimage5 .maingrid, .zbrushimage6 .maingrid, .zbrushimage8 .maingrid, .miscimage1 .maingrid, .miscimage2 .maingrid, .miscimage3 .maingrid, .miscimage4 .maingrid, .miscimage5 .maingrid, .miscimage6 .maingrid, .miscimage7 .maingrid, .miscimage8 .maingrid, .miscimage9 .maingrid, .miscimage11 .maingrid{
+    height: 100%;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.miscimage8 .maingrid{
+    height: 150%;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+#backgroundImageContainer{
+    background-image: none;
+}
+
+#navigationBarOverlay{
+    grid-column-end: 25;
+    border-bottom: 1px solid white;
+}
+#title{
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+#navigationBar{
+    grid-column-start: 13;
+    grid-column-end: 21;
+}
+
+#portfolioNavigationBar{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 7;
+    grid-column-end: 19;
+}
+.portfolioNavigationBarLayout{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 45%;
+}
+.portfolioNavigationBarOptions{
+    color: gray;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150%;
+}
+.portfolioNavigationBarOptions:hover{
+    animation: animatePortfolioNavigation .4s ease-in-out forwards;
+}
+@keyframes animatePortfolioNavigation{
+    100%{
+        color: cyan;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
+
+#footerOverlay{
+    grid-row-start: 20;
+    grid-row-end: 21;
+    grid-column-end: 25;
+}
+#socialMediaFooter{
+    grid-row-start: 20;
+    grid-row-end: 21;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+
+.ZBrush #footerOverlay{
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-end: 25;
+}
+.ZBrush #socialMediaFooter{
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+
+.miscellaneous #footerOverlay, .tbimage1 #footerOverlay, .tbimage2 #footerOverlay, .tbimage3 #footerOverlay, .tbimage6 #footerOverlay, .tbimage7 #footerOverlay, .tbimage8 #footerOverlay, .tbimage9 #footerOverlay, .zbrushimage1 #footerOverlay, .zbrushimage2 #footerOverlay, .zbrushimage3 #footerOverlay, .zbrushimage4 #footerOverlay, .zbrushimage5 #footerOverlay, .zbrushimage6 #footerOverlay, .zbrushimage8 #footerOverlay, .miscimage1 #footerOverlay, .miscimage2 #footerOverlay, .miscimage3 #footerOverlay, .miscimage4 #footerOverlay, .miscimage5 #footerOverlay, .miscimage6 #footerOverlay, .miscimage7 #footerOverlay, .miscimage8 #footerOverlay, .miscimage9 #footerOverlay, .miscimage11 #footerOverlay{
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-end: 25;
+}
+.miscimage10 #footerOverlay{
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-end: 25;
+}
+.miscellaneous #socialMediaFooter, .tbimage1 #socialMediaFooter, .tbimage2 #socialMediaFooter, .tbimage3 #socialMediaFooter, .tbimage6 #socialMediaFooter, .tbimage7 #socialMediaFooter, .tbimage8 #socialMediaFooter, .tbimage9 #socialMediaFooter, .zbrushimage1 #socialMediaFooter, .zbrushimage2 #socialMediaFooter, .zbrushimage3 #socialMediaFooter, .zbrushimage4 #socialMediaFooter, .zbrushimage5 #socialMediaFooter, .zbrushimage6 #socialMediaFooter, .zbrushimage8 #socialMediaFooter, .miscimage1 #socialMediaFooter, .miscimage1 #socialMediaFooter, .miscimage2 #socialMediaFooter, .miscimage3 #socialMediaFooter, .miscimage4 #socialMediaFooter, .miscimage5 #socialMediaFooter, .miscimage6 #socialMediaFooter, .miscimage7 #socialMediaFooter, .miscimage8 #socialMediaFooter, .miscimage9 #socialMediaFooter, .miscimage11 #socialMediaFooter{
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+.miscimage10 #socialMediaFooter{
+    grid-row-start: 12;
+    grid-row-end: 13;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+.tbimage3 #footerOverlay, .tbimage5 #footerOverlay, .tbimage10 #footerOverlay, .zbrushimage7 #footerOverlay, .zbrushimage9 #footerOverlay{
+    grid-row-start: 16;
+    grid-row-end: 17;
+    grid-column-end: 25;
+}
+.miscimage8 #footerOverlay{
+    grid-row-start: 15;
+    grid-row-end: 16;
+    grid-column-end: 25;
+}
+.tbimage3 #socialMediaFooter, .tbimage5 #socialMediaFooter, .tbimage10 #socialMediaFooter, .zbrushimage7 #socialMediaFooter, .zbrushimage9 #socialMediaFooter{
+    grid-row-start: 16;
+    grid-row-end: 17;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+.miscimage8 #socialMediaFooter{
+    grid-row-start: 15;
+    grid-row-end: 16;
+    grid-column-start: 9;
+    grid-column-end: 17;
+}
+
+.terrabyte #portfolioImage1{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 14;
+    background-image: url(Images/matt/Terra_Byte_Series/TB10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage2{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 14;
+    grid-column-end: 20;
+    background-image: url(Images/matt/Terra_Byte_Series/TB7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage3{
+    grid-row-start: 14;
+    grid-row-end: 20;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-image: url(Images/matt/Terra_Byte_Series/TB1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.terrabyte #portfolioImage4{
+    grid-row-start: 14;
+    grid-row-end: 20;
+    grid-column-start: 13;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Terra_Byte_Series/TB2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage5{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 20;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Terra_Byte_Series/TB11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage6{
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 14;
+    grid-column-end: 20;
+    background-image: url(Images/matt/Terra_Byte_Series/TB8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage7{
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 20;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Terra_Byte_Series/TB5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage8{
+    grid-row-start: 9;
+    grid-row-end: 14;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-image: url(Images/matt/Terra_Byte_Series/TB6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage9{
+    grid-row-start: 9;
+    grid-row-end: 14;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    background-image: url(Images/matt/Terra_Byte_Series/TB9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage10{
+    grid-row-start: 9;
+    grid-row-end: 14;
+    grid-column-start: 17;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Terra_Byte_Series/TB4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.terrabyte #portfolioImage11{
+    height: 0%;
+} 
+.terrabyte #portfolioImage12{
+    height: 0%;
+}
+
+.ZBrush #ZBrushImage1{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-image: url(Images/matt/Zbrush3DModels/animalbust2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage2{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    background-image: url(Images/matt/Zbrush3DModels/animalbust1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage3{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 17;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Zbrush3DModels/animalBUst3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+}
+.ZBrush #ZBrushImage4{
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-image: url(Images/matt/Zbrush3DModels/ZBrush\ Document.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage5{
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    background-image: url(Images/matt/Zbrush3DModels/deer\ skull.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage6{
+    grid-row-start: 6;
+    grid-row-end: 9;
+    grid-column-start: 17;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Zbrush3DModels/cartoonyskull.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage7{
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    background-image: url(Images/matt/Zbrush3DModels/b8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage8{
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column-start: 9;
+    grid-column-end: 17;
+    background-image: url(Images/matt/Zbrush3DModels/Shoko.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage9{
+    grid-row-start: 9;
+    grid-row-end: 12;
+    grid-column-start: 17;
+    grid-column-end: 25;
+    background-image: url(Images/matt/Zbrush3DModels/a10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.ZBrush #ZBrushImage10{
+    height: 0%;
+}
+
+.miscellaneous #misc1{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 11;
+    background-image: url(Images/matt/misc/m5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc2{
+    grid-row-start: 6;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-image: url(Images/matt/misc/m6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc3{
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column-start: 18;
+    grid-column-end: 21;
+    background-image: url(Images/matt/misc/m1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc4{
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column-start: 18;
+    grid-column-end: 21;
+    background-image: url(Images/matt/misc/m2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc5{
+    grid-row-start: 8;
+    grid-row-end: 10;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    background-image: url(Images/matt/misc/m3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc6{
+    grid-row-start: 6;
+    grid-row-end: 8;
+    grid-column-start: 15;
+    grid-column-end: 18;
+    background-image: url(Images/matt/misc/m4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.miscellaneous #misc7{
+    grid-row-start: 6;
+    grid-row-end: 10;
+    grid-column-start: 9;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m8.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc8{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 14;
+    grid-column-end: 21;
+    background-image: url(Images/matt/misc/m12.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc9{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 11;
+    grid-column-end: 14;
+    background-image: url(Images/matt/misc/m10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc10{
+    grid-row-start: 5;
+    grid-row-end: 10;
+    grid-column-start: 21;
+    grid-column-end: 25;
+    background-image: url(Images/matt/misc/m7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc11{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-image: url(Images/matt/misc/m13.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc12{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 21;
+    grid-column-end: 25;
+    background-image: url(Images/matt/misc/m11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.miscellaneous #misc13{
+    grid-row-start: 6;
+    grid-row-end: 10;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    background-image: url(Images/matt/misc/m9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+} 
+.imageCaption{
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 100%;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+@keyframes animateCaption{
+    100%{
+        opacity: 1;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+}
+
+#portfolioImageClicked{
+    /* background-color: red; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#portfolioImageClicked2{
+    /* background-color: red; */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0px;
+}
+.tbimage1 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB10.jpg);
+}
+.tbimage2 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB7.jpg);
+}
+.tbimage3 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB1.jpg);
+}
+.tbimage3 #portfolioImageClicked2{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB2.jpg);
+    height: 100%;
+}
+.tbimage5 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB11.jpg);
+}
+.tbimage5 #portfolioImageClicked2{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+    height: 100%;
+}
+.tbimage6 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB8.jpg);
+}
+.tbimage7 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB5.jpg);
+}
+.tbimage8 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB6.jpg);
+}
+.tbimage9 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB9.jpg);
+}
+.tbimage10 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+}
+.tbimage10 #portfolioImageClicked2{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Terra_Byte_Series/TB4.jpg);
+    height: 100%;
+}
+
+.zbrushimage1 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/animalbust2.jpg);
+}.zbrushimage2 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/animalbust1.jpg);
+}.zbrushimage3 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/animalBUst3.jpg);
+}.zbrushimage4 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/ZBrush\ Document.jpg);
+}.zbrushimage5 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/deer\ skull.jpg);
+}.zbrushimage6 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/cartoonyskull.jpg);
+}
+.zbrushimage7 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/b8.jpg);
+}
+.zbrushimage7 #portfolioImageClicked2{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/headBust2.jpg);
+    height: 100%;
+}
+.zbrushimage8 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/Shoko.jpg);
+}
+.zbrushimage9 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/a10.jpg);
+}
+.zbrushimage9 #portfolioImageClicked2{
+    grid-row-start: 9;
+    grid-row-end: 15;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/Zbrush3DModels/headBust1.jpg);
+    height: 100%;
+}
+
+.miscimage1 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m5.jpg);
+}
+.miscimage2 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m6.jpg);
+}
+.miscimage3 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m1.jpg);
+}
+.miscimage4 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m2.jpg);
+}
+.miscimage5 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m3.jpg);
+}
+.miscimage6 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m4.jpg);
+}
+.miscimage7 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m8.jpg);
+}
+.miscimage8 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 14;
+    background-image: url(Images/matt/misc/m11.jpg);
+}
+.miscimage8 #portfolioImageClicked2{
+    grid-row-start: 8;
+    grid-row-end: 14;
+    grid-column-start: 4;
+    grid-column-end: 14;
+    background-image: url(Images/matt/misc/m12.jpg);
+    height: 100%;
+}
+.miscimage9 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m10.jpg);
+}
+.miscimage10 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 11;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m7.jpg);
+}
+.miscimage11 #portfolioImageClicked{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 15;
+    background-image: url(Images/matt/misc/m13.jpg);
+}
+#portfolioImageClickedTitle{
+    grid-row-start: 3;
+    grid-row-end: 9;
+    grid-column-start: 16;
+    grid-column-end: 24;
+}
+#descriptionTitle{
+    text-align: center;
+    color: white;
+}
+#description{
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .terrabyte .mainGrid{
+        height: 510%;
+        grid-template-rows: repeat(51, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 210%;
+        grid-template-rows: repeat(21, 1fr);
+    }
+    .miscellaneous .mainGrid{
+        height: 670%;
+        grid-template-rows: repeat(67, 1fr);
+    }
+    #navigationBar{
+        grid-area: 1/11/2/25;
+    }
+    .portfolioNavigationBarOptions{
+        font-size: 75%;
+    }
+    #title{
+        grid-area: 1/1/2/14;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/1/3/23;
+    }
+    .terrabyte #footerOverlay{
+        grid-row-start: 51;
+        grid-row-end: 52;
+    }
+    .terrabyte #socialMediaFooter{
+        grid-row-start: 51;
+        grid-row-end: 52;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #footerOverlay{
+        grid-row-start: 21;
+        grid-row-end: 22;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-row-start: 21;
+        grid-row-end: 22;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #footerOverlay{
+        grid-row-start: 67;
+        grid-row-end: 68;
+    }
+    .miscellaneous #socialMediaFooter{
+        grid-row-start: 67;
+        grid-row-end: 68;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .imageCaption{
+        font-size: 60%;
+    }
+
+    .terrabyte #portfolioImage1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage3{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage4{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage6{
+        grid-row-start: 23;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage7{
+        grid-row-start: 27;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage8{
+        grid-row-start: 31;
+        grid-row-end: 35;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage9{
+        grid-row-start: 35;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage10{
+        grid-row-start: 39;
+        grid-row-end: 43;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage11{
+        grid-row-start: 43;
+        grid-row-end: 47;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .terrabyte #portfolioImage12{
+        grid-row-start: 47;
+        grid-row-end: 51;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 7;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 9;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 11;
+        grid-row-end: 13;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 5;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage6{
+        grid-row-start: 13;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 17;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 15;
+        grid-row-end: 17;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 19;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        display: none;
+    }
+    
+    .miscellaneous #misc1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc2{
+        grid-row-start: 7;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc3{
+        grid-row-start: 15;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc4{
+        grid-row-start: 21;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc5{
+        grid-row-start: 27;
+        grid-row-end: 33;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc6{
+        grid-row-start: 33;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc7{
+        grid-row-start: 39;
+        grid-row-end: 44;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc8{
+        grid-row-start: 44;
+        grid-row-end: 48;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc9{
+        grid-row-start: 48;
+        grid-row-end: 54;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc10{
+        grid-row-start: 48;
+        grid-row-end: 57;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc11{
+        grid-row-start: 57;
+        grid-row-end: 63;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc12{
+        grid-row-start: 63;
+        grid-row-end: 67;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc13{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .terrabyte .mainGrid{
+        height: 510%;
+        grid-template-rows: repeat(51, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 300%;
+        grid-template-rows: repeat(30, 1fr);
+    }
+    .miscellaneous .mainGrid{
+        height: 670%;
+        grid-template-rows: repeat(67, 1fr);
+    }
+    #navigationBar{
+        grid-area: 1/11/2/25;
+    }
+    .portfolioNavigationBarOptions{
+        font-size: 120%;
+    }
+    #title{
+        grid-area: 1/1/2/14;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/1/3/23;
+    }
+    .terrabyte #footerOverlay{
+        grid-row-start: 51;
+        grid-row-end: 52;
+    }
+    .terrabyte #socialMediaFooter{
+        grid-row-start: 51;
+        grid-row-end: 52;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #footerOverlay{
+        grid-row-start: 30;
+        grid-row-end: 31;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-row-start: 30;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #footerOverlay{
+        grid-row-start: 67;
+        grid-row-end: 68;
+    }
+    .miscellaneous #socialMediaFooter{
+        grid-row-start: 67;
+        grid-row-end: 68;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+
+    .terrabyte #portfolioImage1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage3{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage4{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage6{
+        grid-row-start: 23;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage7{
+        grid-row-start: 27;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage8{
+        grid-row-start: 31;
+        grid-row-end: 35;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage9{
+        grid-row-start: 35;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage10{
+        grid-row-start: 39;
+        grid-row-end: 43;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage11{
+        grid-row-start: 43;
+        grid-row-end: 47;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .terrabyte #portfolioImage12{
+        grid-row-start: 47;
+        grid-row-end: 51;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage6{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 24;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 21;
+        grid-row-end: 24;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 27;
+        grid-row-end: 30;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        display: none;
+    }
+    
+    .miscellaneous #misc1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc2{
+        grid-row-start: 7;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc3{
+        grid-row-start: 15;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc4{
+        grid-row-start: 21;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc5{
+        grid-row-start: 27;
+        grid-row-end: 33;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc6{
+        grid-row-start: 33;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc7{
+        grid-row-start: 39;
+        grid-row-end: 44;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc8{
+        grid-row-start: 44;
+        grid-row-end: 48;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc9{
+        grid-row-start: 48;
+        grid-row-end: 54;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc10{
+        grid-row-start: 48;
+        grid-row-end: 57;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc11{
+        grid-row-start: 57;
+        grid-row-end: 63;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc12{
+        grid-row-start: 63;
+        grid-row-end: 67;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc13{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .terrabyte .mainGrid{
+        height: 510%;
+        grid-template-rows: repeat(51, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 300%;
+        grid-template-rows: repeat(30, 1fr);
+    }
+    .miscellaneous .mainGrid{
+        height: 890%;
+        grid-template-rows: repeat(89, 1fr);
+    }
+    #navigationBar{
+        grid-area: 1/11/2/25;
+    }
+    #title{
+        grid-area: 1/1/2/14;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/1/3/23;
+    }
+    .terrabyte #footerOverlay{
+        grid-row-start: 51;
+        grid-row-end: 52;
+    }
+    .terrabyte #socialMediaFooter{
+        grid-row-start: 51;
+        grid-row-end: 52;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #footerOverlay{
+        grid-row-start: 30;
+        grid-row-end: 31;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-row-start: 30;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #footerOverlay{
+        grid-row-start: 89;
+        grid-row-end: 90;
+    }
+    .miscellaneous #socialMediaFooter{
+        grid-row-start: 89;
+        grid-row-end: 90;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+
+    .terrabyte #portfolioImage1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage3{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage4{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage6{
+        grid-row-start: 23;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage7{
+        grid-row-start: 27;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage8{
+        grid-row-start: 31;
+        grid-row-end: 35;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage9{
+        grid-row-start: 35;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage10{
+        grid-row-start: 39;
+        grid-row-end: 43;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage11{
+        grid-row-start: 43;
+        grid-row-end: 47;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .terrabyte #portfolioImage12{
+        grid-row-start: 47;
+        grid-row-end: 51;
+        grid-column-start: 1;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage6{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 24;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 21;
+        grid-row-end: 24;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 27;
+        grid-row-end: 30;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        display: none;
+    }
+    
+    .miscellaneous #misc1{
+        grid-row-start: 3;
+        grid-row-end: 8;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc2{
+        grid-row-start: 8;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc3{
+        grid-row-start: 18;
+        grid-row-end: 25;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc4{
+        grid-row-start: 25;
+        grid-row-end: 32;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc5{
+        grid-row-start: 32;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc6{
+        grid-row-start: 39;
+        grid-row-end: 46;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .miscellaneous #misc7{
+        grid-row-start: 46;
+        grid-row-end: 52;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc8{
+        grid-row-start: 52;
+        grid-row-end: 57;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc9{
+        grid-row-start: 57;
+        grid-row-end: 65;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc10{
+        grid-row-start: 65;
+        grid-row-end: 77;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc11{
+        grid-row-start: 77;
+        grid-row-end: 84;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc12{
+        grid-row-start: 84;
+        grid-row-end: 89;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    } 
+    .miscellaneous #misc13{
+        display: none;
+    } 
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1365px){
+    .terrabyte .mainGrid{
+        height: 210%;
+        grid-template-rows: repeat(21, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 230%;
+        grid-template-rows: repeat(23, 1fr);
+    }
+    #navigationBar{
+        grid-area: 1/13/2/23;
+    }
+    #title{
+        grid-area: 1/1/2/13;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/1/3/23;
+    }
+    .terrabyte #footerOverlay{
+        grid-row-start: 21;
+        grid-row-end: 22;
+    }
+    .terrabyte #socialMediaFooter{
+        grid-row-start: 21;
+        grid-row-end: 22;
+        grid-column-start: 3;
+        grid-column-end: 23;
+    }
+    .ZBrush #footerOverlay{
+        grid-row-start: 23;
+        grid-row-end: 24;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-row-start: 23;
+        grid-row-end: 24;
+        grid-column-start: 3;
+        grid-column-end: 23;
+    }
+    .miscellaneous #socialMediaFooter{
+        grid-column-start: 3;
+        grid-column-end: 23;
+    }
+
+    .terrabyte #portfolioImage1{
+        grid-column-start: 1;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage3{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage4{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 9;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage6{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 17;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage7{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 17;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage8{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 9;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage9{
+        grid-row-start: 9;
+        grid-row-end: 15;
+        grid-column-start: 9;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage10{
+        grid-row-start: 18;
+        grid-row-end: 21;
+    }
+    .terrabyte #portfolioImage11{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .terrabyte #portfolioImage12{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 17;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+   .ZBrush #ZBrushImage6{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 13;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Zbrush3DModels/headBust2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1600px){
+    #portfolioNavigationBar{
+        grid-area: 2/4/3/22;
+    }
+    #title{
+        grid-area: 1/1/2/13;
+    }
+    .terrabyte #socialMediaFooter{
+        grid-column-start: 7;
+        grid-column-end: 19;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-column-start: 7;
+        grid-column-end: 19;
+    }
+    .miscellaneous #socialMediaFooter{
+        grid-column-start: 7;
+        grid-column-end: 19;
+    }
+}
+/* @media screen and (max-width: 1440px) {
+    #socialMediaFooter{
+        grid-area: 20/7/21/19;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-area: 12/7/13/19;
+    }
+    #navigationBar{
+        grid-area: 1/13/2/23;
+    }
+    #title{
+        grid-area: 1/3/2/11;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/5/3/21;
+    }
+    .terrabyte #portfolioImage1{
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .terrabyte #portfolioImage2{
+        grid-column-start: 13;
+        grid-column-end: 19;
+    }
+    .terrabyte #portfolioImage5{
+        grid-column-start: 19;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage6{
+        grid-column-start: 13;
+        grid-column-end: 19;
+    }
+    .terrabyte #portfolioImage7{
+        grid-column-start: 19;
+        grid-column-end: 25;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .terrabyte .mainGrid{
+        height: 180%;
+        grid-template-rows: repeat(18, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 230%;
+        grid-template-rows: repeat(23, 1fr);
+    }
+    .terrabyte #socialMediaFooter, .terrabyte #footerOverlay{
+        grid-row-start: 18;
+        grid-row-end: 19;
+    }
+    .ZBrush #socialMediaFooter, .ZBrush #footerOverlay{
+        grid-row-start: 23;
+        grid-row-end: 24;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/4/3/22;
+    }
+    .terrabyte #portfolioImage3, .terrabyte #portfolioImage4{
+        grid-row-start: 13;
+        grid-row-end: 18;
+    }
+    .terrabyte #portfolioImage8, .terrabyte #portfolioImage9, .terrabyte #portfolioImage10{
+        grid-row-start: 9;
+        grid-row-end: 13;
+    }
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+   .ZBrush #ZBrushImage6{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 13;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Zbrush3DModels/headBust2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1920px) and (max-height: 1024px) and (min-width: 1000px) and (min-height: 950px){
+    .terrabyte .mainGrid{
+        height: 140%;
+        grid-template-rows: repeat(14, 1fr);
+    }
+    .terrabyte #footerOverlay, .terrabyte #socialMediaFooter{
+        grid-row-start: 14;
+        grid-row-end: 15;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/4/3/22;
+    }
+    .terrabyte #portfolioImage1{
+        grid-row-start: 3;
+        grid-row-end: 7;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .terrabyte #portfolioImage3, .terrabyte #portfolioImage4{
+        grid-row-start: 10;
+        grid-row-end: 14;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .terrabyte #portfolioImage6, .terrabyte #portfolioImage7{
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    .terrabyte #portfolioImage8, .terrabyte #portfolioImage9, .terrabyte #portfolioImage10{
+        grid-row-start: 7;
+        grid-row-end: 10;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #portfolioNavigationBar{
+        grid-area: 2/3/3/23;
+    }
+    .portfolioNavigationBarOptions{
+        font-size: 130%;
+    }
+    .terrabyte .mainGrid{
+        height: 210%;
+        grid-template-rows: repeat(21, 1fr);
+    }
+    .ZBrush .mainGrid{
+        height: 180%;
+        grid-template-rows: repeat(18, 1fr);
+    }
+    .terrabyte #footerOverlay, .terrabyte #socialMediaFooter{
+        grid-row-start: 21;
+        grid-row-end: 22;
+    }
+    .ZBrush #footerOverlay, .ZBrush #socialMediaFooter{
+        grid-row-start: 18;
+        grid-row-end: 19;
+    }
+    .terrabyte #portfolioImage1{
+        grid-column-start: 1;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage2{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage3{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage4{
+        grid-row-start: 18;
+        grid-row-end: 21;
+        grid-column-start: 9;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage5{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 9;
+    }
+    .terrabyte #portfolioImage6{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 17;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage7{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 17;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage8{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 9;
+        grid-column-end: 17;
+    }
+    .terrabyte #portfolioImage9{
+        grid-row-start: 9;
+        grid-row-end: 15;
+        grid-column-start: 9;
+        grid-column-end: 25;
+    }
+    .terrabyte #portfolioImage10{
+        grid-row-start: 18;
+        grid-row-end: 21;
+    }
+    .terrabyte #portfolioImage11{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        background-image: url(Images/matt/Terra_Byte_Series/TB12.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .terrabyte #portfolioImage12{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 17;
+        grid-column-end: 25;
+        background-image: url(Images/matt/Terra_Byte_Series/TB3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100%;
+    }
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 3;
+        grid-row-end: 6;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+   .ZBrush #ZBrushImage6{
+        grid-row-start: 9;
+        grid-row-end: 12;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 12;
+        grid-row-end: 15;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        grid-row-start: 15;
+        grid-row-end: 18;
+        grid-column-start: 13;
+        grid-column-end: 25;
+    }
+}
+
+@media screen and (max-width: 900px) and (max-height: 600px){
+    #navigationBar{
+        grid-area: 1/11/2/25;
+    }
+    #socialMediaFooter{
+        grid-area: 20/5/21/21;
+    }
+    .ZBrush #socialMediaFooter{
+        grid-area: 18/5/19/21;
+    }
+    .portfolioNavigationBarOptions{
+        font-size: 120%;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/2/3/24;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ZBrush .mainGrid{
+        height: 390%;
+        grid-template-rows: repeat(39, 1fr);
+    }
+    .ZBrush #footerOverlay, .ZBrush #socialMediaFooter{
+        grid-row-start: 39;
+        grid-row-end: 40;
+    }
+    .navigationBarLayout{
+        height: 78%;
+    }
+    .navigationBarOptions{
+        font-size: 90%;
+    }
+    .portfolioNavigationBarOptions{
+        font-size: 100%;
+    }
+    #name{
+        font-size: 120%;
+    }
+    #occupation{
+        font-size: 60%;
+    }
+    #portfolioNavigationBar{
+        grid-area: 2/1/3/25;
+    }
+    .ZBrush #ZBrushImage1{
+        grid-row-start: 11;
+        grid-row-end: 15;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage2{
+        grid-row-start: 3;
+        grid-row-end: 7;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage3{
+        grid-row-start: 15;
+        grid-row-end: 19;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage4{
+        grid-row-start: 19;
+        grid-row-end: 23;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage5{
+        grid-row-start: 7;
+        grid-row-end: 11;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage6{
+        grid-row-start: 23;
+        grid-row-end: 27;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage7{
+        grid-row-start: 31;
+        grid-row-end: 35;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage8{
+        grid-row-start: 27;
+        grid-row-end: 31;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage9{
+        grid-row-start: 35;
+        grid-row-end: 39;
+        grid-column-start: 1;
+        grid-column-end: 25;
+    }
+    .ZBrush #ZBrushImage10{
+        display: none;
+    }
+} */

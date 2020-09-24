@@ -1,0 +1,131 @@
+Grid:
+-12x10 is a good rule of thumb for grids
+-how to center an object in a div: 
+    apply this to the div:
+        display: grid;
+        place-items: center;
+        https://www.youtube.com/watch?v=qJVVZYTYA9U
+
+FlexBox:
+-When we are using flexbox, we need to have a flexbox container and DIVS within that container. 
+ NOT just images in the container. Instead put the images in the divs which are in the container.
+ Also set the divs within the flexbox container to a certain width/height.
+-.socialMediaFooter is the flexbox container.
+-.socialMediaLink is the div in the flexbox container.
+-.socialMedialogos are the images.
+-When I use flexbox and justify-content and align-items, sometimes the align-items will not work unless I set a height to the div. EX: ul in style.css.
+
+Google Fonts:
+-I get google fonts from here https://fonts.google.com/?selection.
+-I copy the href and paste it in the html and then I call the font family in the css.
+
+Border for text:
+-I make a white border around text using this: text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+list-style-type: none; //used for a ul to remove the bullet points from a li.
+display: inline-block; //used for li to display the li from left to right instead of up to down.
+
+#title h1{}
+-can do this to modify all the h1 within the title element.
+
+background: rgba(0, 0, 0, 0.2); //I use this to make ONLY the background-color transparent. If we tinker with opacity, everything in that div becomes transparent including the text. 
+-https://www.geeksforgeeks.org/set-the-opacity-only-to-background-color-not-on-the-text-in-css/
+
+white-space: nowrap; //used for h1, h2, etc in order to make it so that the text never makes a new line.
+
+<meta name="viewport" content="width=device-width"> // I used this on an HTML page so that the toggle device toolbar works for google chrome inspection.
+
+.contact #socialMediaFooter, .home #socialMediaFooter, .resume #socialMediaFooter{}
+-multple css class declarations:
+https://stackoverflow.com/questions/2099252/how-can-i-apply-styles-to-multiple-classes-at-once/2099263
+
+"background-position: contain" vs "background-position: cover"
+-use contain if the image does not need to fit in a specific area on the website
+-use cover if it does
+
+Problems:
+1.) CENTERING PROBLEM: Footer/Social Media logos Centering Problem
+    -Cant seem to center the social media logos properly within their divs. I tried doing flexbox "justify-content: center" and "align-content: center" for .socialMediaLink but ots not working.
+    -I switched from flexbox to simply "text-align: center" because when I used the flexbox options for .socialMediaLink the clickable link would expand past its image.
+    -Now the logos are vertically centered but not horizontally centered.
+    Solved: I used "position: relative" for the parent (.socialMediaLink) of the images (.socialMediaLogos). I then implemented the following for (.socialMediaLogos):
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    -I used this link to find out how to do it: https://css-tricks.com/centering-css-complete-guide/#center-horizontally-and-vertically.
+    -I looked under "Both horizontally and vertically" and "Is the element of unknown width and height?".
+
+2.) EXTENDING GRID PROBLEM: Extending the grid for portfolio.html.
+    - I have two options to extend the grid: 
+    1.) I can extend the grid by creating another <section class = "mainGrid"></section> in the portfolio html and then move the footerOverlay to the new grid section I made so that it 
+    goes at the bottom. Doing this will give me two duplicate mainGrids. The good thing about this is that I do not have to resize the header or the footer or the images. I just have to
+    move the footer all the way to the bottom. The problem with this method is that the two grids are separated and I cannot put an image on both the grids in case I need more space. The 
+    image needs to fit perfectly on the first grid because I cannot extend it to the second grid.
+    2.) I can resize the height of main grid and readjust the gridTemplateRows and gridTemplateColumns accordingly. The good thing about this method is that I can fit the images easily because I am
+    only using one grid instead of two. The problem with this method is that it requires a lot of adjustment in the css. NOTE: When I double the height and double the gridTemplateRows size,
+    then I do not need to readjust the div' gridRows because the size of the rows have not changed; only extended rows (Need to change columns only).
+    Note: Consider using classes to make multiple css class declarations. Look at problem 3.
+
+3.) RESPONSIVE DESIGN FOR MULTIPLE SIMILAR PAGES.
+    -I want to reuse the CSS for the TerraByte and ZBrush pages since they are similar, but I want to change the height of one page without changing the other. How is this possible when they
+    both use the exact same grid? Also how do I change the @media screens responsive designs so that they only change on a specific page rather than both?
+    SOLUTION: https://stackoverflow.com/questions/41307681/is-there-a-way-to-make-media-queries-select-a-specific-page
+    -Apparently you can name the html class like so "<html class = "test" lang="en">". And then you can change that html class's elements individually like ".test .maingrid{}". You can do
+    this method with the media sscreens as well.
+Javscript:
+-onmouseover = test(); //performs test() function when mouse is moved over element. (I implement this in the html)
+-onmouseout = test2(); //performs test2() function when pointer is moved out of element.
+-document.getElementsByClassName("").onmouseover = test1() //same as above. I implement this in the javascript.
+https://www.w3schools.com/jsref/obj_mouseevent.asp
+-if(document.URL.includes("home.html")){} //if the URL contains the given parameters then perform something.
+-<body onload = handlePages()></body> // once the page loads perform handlePages() function.
+-document.getElementsByTagName("ul")[0]; //gets an array of elements containing ul.
+
+Responsive Design:
+https://www.rapidtables.com/web/dev/screen-resolution-statistics.html
+https://deviceatlas.com/blog/most-used-smartphone-screen-resolutions#us
+https://docs.google.com/spreadsheets/d/1nfY1jVI1fGA7eexo62kOaOaqutcs_9no7BVRlwIprTc/edit?usp=sharing
+-If I set a max-width only, then everytime that media screen will apply unless another media screen statement is true and overwrites the previous statement. Make sure to realize that max-width
+ statements apply to everything within that width. Use a min width along with max-width to set a specific range.
+READ THIS:
+-Disregard everything above. 
+-I've been doing responsive design wrong. Use this website to find the proper css width and height: https://www.mydevice.io/#compare-devices.
+-Also do mobile-first: https://www.w3schools.com/css/css_rwd_mediaqueries.asp.
+-I'm pretty sure mobile devices are fucked because some widths dont even have the images i made in the media query displayed yet.
+
+Progress Notes: 
+1.) For the name and occupation, I had to make the hover over animation in the javascript because I did not know how to make it in css so that if I hover over the div, both the name and occupation
+    are animated. I could only hover one or the other if I implemented the animation in one of them. Therefore I decided to use onmouseover and onmouseout on the div and take care of the 
+    animation in javascript.
+2.) I created a handlePages() Javascript function in order to give me the ability to modify the css for each page instead of making several css files. I can figure out which page is which by  
+    using the conditional "if(document.URL.includes("home.html")){}". I used <body onload = handlePages()> as the event trigger for my Javascript function.
+3.) I extended the main grid by creating another <section class = "mainGrid"></section> in the portfolio html. I then moved the footOverlay to the new grid section I made so that it 
+    goes at the bottom. I then fitted the pictures and used "background-size: cover" so that the pictures fit even if I change the window size.
+4.) I made image captions over each image div. I created a onmouseover and onmouseout trigger event for each div in the portfolio.html and gave the corresponding functions each a value in its 
+    parameter so that the javascript will know which div I am accessing (IMPORTANT). I then changed the opacity to 1 when hovering over the div using javascript and the given parameter. I changed 
+    the portfolioImages to <a> rather than <div> so that the whole image is clickable.
+5.) When I click the image, we get ridirected to a new page. The grid should be extended through creating another grid rather than resizing everything (like the Portfolio page) since I will 
+    more than one of these pages. I only have to move the footer at the bottom rather than resizing the header and footer.
+6.) I added the images in the portfolio so that they would fit on a desktop screen. I also implemented the portfolioNavigationBar and am currently working on resizing everything to make the
+    website responsive. I think I have to use css only for media queries because javascript does not change media queries automatically if the user resizes, only once upon loading the page.
+    StackOverflow suggest CSS only for media queries only. I need to remove a lot of javascript since I modified the portfolio style a lot. I need to make a separate CSS file for portfolio.
+    I decided on making a separate CSS file for the portfolio page. The second CSS file (portfolioStyle.css) will be linked in portfolio related HTML pages AFTER the defaultStyle.css. This is
+    important because the last css file linked has the last modifications to the style.
+7.) Resizing the portfolio was a lot easier than I expected. I simply used the device toolbar in chrome and changed the resolutions and adjusted the images as needed. I covered the most common
+    sizes, however, I still need to cover the responsive design for when someone is shrinking the browser horizontally (left and right). I made big mistakes on resizing the portfolio so now 
+    I have to redo them.
+8.) I am currently adding html pages for each individual pictures clicked. I am going to try to make the background positions be contain rather than cover since it will display the full image.
+
+Suggestion: Change the background image container's row to 11 so that it covers the entire screen. Then make the footerOverlay transparent. Maybe only for the home page?
+
+HostGator issues:
+-Make sure to name the default page index.html. I encountered a problem in javascript where I had the following code: 
+    if(document.URL.includes("index.html")){
+        document.getElementById("name").style.color = "cyan";
+        document.getElementById("occupation").style.color = "cyan";
+        document.getElementById("footerOverlay").style.background = "rgb(49, 49, 49, 1)";
+    }
+    This will not do anything to the main page (mattguyart.com) since it technically does not have indexl.html. So we need to make an else statement to accomodate for the url "mattguyart.com".
+-The file paths need to be fucking precise. I spent a whole day figuring out what was wrong with my pictures but the problem was that the file path was not correct (case sensitive).
+ Microsoft visual studio will work if the path it isn't case sensitive but not HostGator.

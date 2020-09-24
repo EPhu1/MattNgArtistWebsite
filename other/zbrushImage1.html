@@ -1,0 +1,52 @@
+<html class = "zbrushimage1" lang="en">
+<head>
+    <title>MattGuy Art</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lexend+Zetta|Orbitron&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "defaultStyle.css">
+    <link rel = "stylesheet" href = "portfolioStyle.css">
+</head>
+<body onload = handlePages()>
+    <meta name="viewport" content="width=device-width">
+    <section class = "mainGrid">
+        <div id = "backgroundImageContainer"></div>
+        <div id = "navigationBarOverlay"></div>
+        <div id = "title">
+                <a href = "../index.html" onmouseover = animateTitleText() onmouseout = deanimateTitleText()>
+                <h1 id = "name">Matthew Ng</h1>
+                <h2 id = "occupation">Concept Artist</h2>
+            </a>
+        </div>
+        <div id = "navigationBar">
+            <ul class = "navigationBarLayout">
+                <a href = "portfolioTerraByte.html"><li class = "navigationBarOptions">Portfolio</li></a>
+                <a href = "resume.html"><li class = "navigationBarOptions">Resume</li></a>
+                <a href = "contact.html"><li class = "navigationBarOptions">Contact</li></a>
+            </ul>
+        </div>
+        <div id = "footerOverlay"></div>
+        <div id = "socialMediaFooter">
+            <div class = "socialMediaLink">
+                <a href = "https://www.instagram.com/mat7_guy/?hl=en">
+                    <img class = "socialMediaLogos" src="Images/ig_logo.png">
+                </a>
+            </div>
+            <div class = "socialMediaLink">
+                <a href = "https://www.facebook.com/Pusheen/">
+                    <img class = "socialMediaLogos" src="Images/facebook_logo.png">
+                </a>
+            </div>
+            <div class = "socialMediaLink">
+                    <a href = "https://twitter.com/Pusheen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                        <img class = "socialMediaLogos" src="Images/artstation_logo.png">
+                    </a>
+            </div>
+        </div>
+        <div id = "portfolioImageClicked"></div>
+        <div id = "portfolioImageClickedTitle">
+            <h1 id = "descriptionTitle">TITLE</h1>
+            <p id = "description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat eveniet eos aliquam alias facere, eius debitis officia pariatur ipsam sint ratione doloremque quia. Sit quod delectus ipsa eveniet voluptatum nulla.</p>
+        </div>
+    </section>
+</body>
+<script src = "main.js"></script>
+</html>
